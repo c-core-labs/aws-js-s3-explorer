@@ -158,10 +158,11 @@ permissions and limitations under the License.
 <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
 
 <script type="text/javascript">
+    var bucketPath = window.location.pathname.split('/')[1]
     var HIDE_INDEX = true;
     var s3exp_config = {
         Region: '',
-        Bucket: '',
+        Bucket: bucketPath,
         Prefix: '',
         Delimiter: '/'
     };
